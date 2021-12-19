@@ -3,5 +3,9 @@
 version = 3
 
 [[package]]
+name = "assembly-line"
+version = "0.1.0"
+
+[[package]]
 name = "magazine_cutout"
 version = "0.1.0"
