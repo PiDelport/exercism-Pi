@@ -1,8 +1,8 @@
 [workspace]
 members = [
-    "learning/magazine-cutout",
-    "learning/assembly-line",
-    "learning/semi-structured-logs",
-    "learning/resistor-color",
-    "learning/health-statistics",
+  "learning/magazine-cutout",
+  "learning/assembly-line",
+  "learning/semi-structured-logs",
+  "learning/resistor-color",
+  "learning/health-statistics",
 ]
