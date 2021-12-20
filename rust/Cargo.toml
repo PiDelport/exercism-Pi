@@ -3,4 +3,5 @@ members = [
     "learning/magazine-cutout",
     "learning/assembly-line",
     "learning/semi-structured-logs",
+    "learning/resistor-color",
 ]
