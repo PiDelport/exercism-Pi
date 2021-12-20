@@ -2,6 +2,7 @@
 
 # Exercism
 /*/*/.exercism
+/*/*/.gitignore
 /*/*/HELP.md
 /*/*/HINTS.md
 /*/*/README.md
