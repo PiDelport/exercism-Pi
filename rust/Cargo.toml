@@ -7,4 +7,5 @@ members = [
   "learning/health-statistics",
   "learning/role-playing-game",
   "learning/low-power-embedded-game",
+  "learning/short-fibonacci",
 ]
