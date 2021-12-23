@@ -99,6 +99,10 @@ dependencies = [
 ]
 
 [[package]]
+name = "role_playing_game"
+version = "0.1.0"
+
+[[package]]
 name = "semi_structured_logs"
 version = "0.1.0"
 

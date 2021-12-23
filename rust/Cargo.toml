@@ -5,4 +5,5 @@ members = [
   "learning/semi-structured-logs",
   "learning/resistor-color",
   "learning/health-statistics",
+  "learning/role-playing-game",
 ]
