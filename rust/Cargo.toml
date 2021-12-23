@@ -8,4 +8,5 @@ members = [
   "learning/role-playing-game",
   "learning/low-power-embedded-game",
   "learning/short-fibonacci",
+  "learning/rpn-calculator",
 ]
