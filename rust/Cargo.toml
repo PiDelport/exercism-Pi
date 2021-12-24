@@ -9,4 +9,6 @@ members = [
   "learning/low-power-embedded-game",
   "learning/short-fibonacci",
   "learning/rpn-calculator",
+
+  "easy/reverse-string",
 ]
