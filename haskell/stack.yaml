@@ -1,0 +1,7 @@
+# https://docs.haskellstack.org/en/stable/yaml_configuration/
+
+# https://www.stackage.org/
+resolver: lts-18.19
+
+packages:
+- learning/lucians-luscious-lasagna
