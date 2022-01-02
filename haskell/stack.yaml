@@ -10,3 +10,4 @@ packages:
 - easy/space-age
 - easy/pangram
 - easy/bob
+- easy/collatz-conjecture
