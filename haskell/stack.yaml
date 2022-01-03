@@ -11,3 +11,4 @@ packages:
 - easy/pangram
 - easy/bob
 - easy/collatz-conjecture
+- easy/nucleotide-count
