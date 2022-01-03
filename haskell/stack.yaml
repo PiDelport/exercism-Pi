@@ -12,3 +12,4 @@ packages:
 - easy/bob
 - easy/collatz-conjecture
 - easy/nucleotide-count
+- easy/sum-of-multiples
