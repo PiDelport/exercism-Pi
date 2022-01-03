@@ -1,3 +1,5 @@
+-- TODO: Property-based tests, and benchmarks.
+
 module SumOfMultiples (sumOfMultiples, sumOfMultiplesConstructive, sumOfMultiplesAnalytical) where
 
 import Data.List (foldl', subsequences)
