@@ -24,9 +24,9 @@ pub type Counter<Item> = HashMap<Item, usize>;
 /// assert_eq!(counter.get("b"), Some(&1));
 /// assert_eq!(counter.get("c"), Some(&1));
 /// ```
-pub fn count<Item>(items: &[Item]) -> Counter<Item>
+pub fn count<Item>(items: &[impl ToOwned<Owned = Item>]) -> Counter<Item>
 where
-    Item: Eq + Hash + ToOwned<Owned = Item>,
+    Item: Eq + Hash,
 {
     let mut counts = Counter::new();
     for item in items {
