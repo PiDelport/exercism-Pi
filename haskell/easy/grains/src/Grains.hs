@@ -2,12 +2,18 @@ module Grains (square, total) where
 
 import Control.Applicative (Alternative, empty)
 
+-- | Lift a number if it's a valid "chessboard square" number (/1 <= n <= 64/).
+asChessboardNumber :: (Ord a, Num a, Alternative f) => a -> f a
+asChessboardNumber n
+  | 1 <= n && n <= 64 = pure n
+  | otherwise = empty
+
 -- | The number of grains on a single square of the wheat and chessboard problem.
--- Defined for /1 <= n <= 64/.
+-- Defined for valid 'asChessboardNumber' inputs.
 square :: (Alternative f, Integral n, Num m) => n -> f m
-square n =
-  (2 ^ (n - 1))
-    `onlyIf` inRange (1, 64) n
+square = square' <.> asChessboardNumber
+  where
+    square' n = 2 ^ (n - 1)
 
 -- | The number of grains on the entire board of the wheat and chessboard problem.
 total :: Num a => a
@@ -19,12 +25,8 @@ mersenne n = 2 ^ n - 1
 
 -- * Generic helpers
 
--- | Lift a value if and only if a condition is true.
-onlyIf :: Alternative f => a -> Bool -> f a
-x `onlyIf` condition
-  | condition = pure x
-  | otherwise = empty
+-- | 'f . g' for a functor context.
+(<.>) :: Functor f => (b -> c) -> (a -> f b) -> a -> f c
+(f <.> g) a = f <$> g a
 
--- | Like 'Data.Ix.inRange', but for any 'Ord'.
-inRange :: Ord a => (a, a) -> a -> Bool
-inRange (lower, upper) n = lower <= n && n <= upper
+infixr 9 <.>
