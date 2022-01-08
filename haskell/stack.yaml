@@ -13,3 +13,4 @@ packages:
 - easy/collatz-conjecture
 - easy/nucleotide-count
 - easy/sum-of-multiples
+- easy/grains
